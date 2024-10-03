@@ -22,12 +22,21 @@ function drawGrid() {
     }
   }
 }
+function removeGrid() {
+  // TODO: Implement removeGrid function
+}
 
-// TODO: add button to create new fresh grid, get user input to decide number of squares (userInput1xuserInput1)
+// add button to create new fresh grid, get user input to decide number of squares (userInput1xuserInput1)
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
   gridSize = prompt("plz type grid value");
+  if (gridSize >= 100) {
+    gridSize = 100;
+  } else if (gridSize <= 1) {
+    gridSize = 1;
+  }
   console.log(gridSize);
+  removeGrid();
   drawGrid();
 });
 
