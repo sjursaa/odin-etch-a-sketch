@@ -13,10 +13,11 @@ for (let i = 0; i < 16; i++) {
     div.textContent = "div";
     div.setAttribute("style", "color: blue; background: lightblue;");
     divContainer.appendChild(div);
+    div.addEventListener("mouseover", () => {
+      div.setAttribute("style", "background: red;");
+    });
   }
 }
-
-// TODO: setup hover event listener to change color of divs
 
 // TODO: add button to create new fresh grid, get user input to decide number of squares (userInput1xuserInput1)
 
