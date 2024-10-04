@@ -44,6 +44,11 @@ button.addEventListener("click", () => {
 
 drawGrid();
 
+// TODO: remove text from divs
+// TODO: make divs perfectly square
+// TODO: make the container div a static size
+// TODO: make individual divs scale to fit within the container div
+
 // TODO: Extra! Randomize rgb color for each hover
 
 // TODO: Extra! Implement progressive darkening 10% for hover (CSS Opacity)
