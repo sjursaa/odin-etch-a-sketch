@@ -1,4 +1,5 @@
 let gridSize = 16;
+let gridSizeOld = 0;
 // Task 1: Create squares 16x16 divs inside container:
 const container = document.querySelector("#container");
 
@@ -23,12 +24,13 @@ function drawGrid() {
   }
 }
 function removeGrid() {
-  // TODO: Implement removeGrid function
+  container.replaceChildren();
 }
 
 // add button to create new fresh grid, get user input to decide number of squares (userInput1xuserInput1)
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
+  gridSizeOld = gridSize;
   gridSize = prompt("plz type grid value");
   if (gridSize >= 100) {
     gridSize = 100;
