@@ -14,7 +14,10 @@ function drawGrid() {
       const div = document.createElement("div");
       div.classList.add("div");
       div.textContent = "div";
-      div.setAttribute("style", "color: blue; background: lightblue;");
+      div.setAttribute(
+        "style",
+        "color: blue; background: lightblue; width: auto; height: auto;",
+      );
       divContainer.appendChild(div);
       div.addEventListener("mouseover", () => {
         div.setAttribute("style", "background: red;");
